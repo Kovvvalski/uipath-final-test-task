@@ -1,0 +1,45 @@
+﻿{
+  "Metadata": {
+    "Id": "d94ae840-1a9a-4c3f-a8d0-18b40bd362b7",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "DateForm",
+    "Theme": "Default",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "tag": "h2",
+        "content": "Date Input Form",
+        "key": "label",
+        "input": false,
+        "tableView": false,
+        "label": "Label",
+        "type": "label"
+      },
+      {
+        "label": "Date in format 'dd-MM-yyyy'",
+        "tableView": true,
+        "validate": {
+          "required": true,
+          "pattern": "(\\d{2}(\\/|-)\\d{2}(\\/|-)\\d{4})"
+        },
+        "key": "date",
+        "type": "textfield",
+        "input": true
+      },
+      {
+        "type": "button",
+        "label": "Submit",
+        "key": "submit",
+        "disableOnInvalid": true,
+        "input": true,
+        "tableView": false
+      }
+    ]
+  }
+}
