@@ -15,6 +15,58 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "dispatcher/CreateInvoicesQueue.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "isSuccess&Sequence_1",
+        "invoicesDatesUrls&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "dispatcher/GetDate.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dateStr&Sequence_1",
+        "DATE_PATTERN&Sequence_1",
+        "DEFAULT_DATE&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_date"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "dispatcher/GetAllData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_invoicesDatesUrls",
+        "in_pagesNumber"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "performer/du/ProcessInvoices.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "taxonomy&Sequence_1",
+        "dom&Sequence_2",
+        "classificationResults&Sequence_2",
+        "DU_API_KEY&Sequence_1",
+        "docText&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [
+        "DU_API_KEY&f6373634-856d-405b-b0eb-61f863c1089b"
+      ],
+      "AddedNamespaces": null
     }
   ]
 }
