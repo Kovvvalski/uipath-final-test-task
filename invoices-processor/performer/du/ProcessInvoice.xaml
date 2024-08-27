@@ -7,7 +7,7 @@
     <x:Property Name="out_extractedData" Type="OutArgument(sd:DataSet)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>807.2,2206.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>807.2,2040</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -132,7 +132,7 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ProcessInvoice" sap:VirtualizedContainerService.HintSize="540,2141.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ProcessInvoice" sap:VirtualizedContainerService.HintSize="540,1975.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="docText" />
       <Variable x:TypeArguments="p2:Document" Name="dom" />
@@ -208,23 +208,6 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </p1:DigitizeDocument>
-    <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" sap:VirtualizedContainerService.HintSize="477.6,166.4" sap2010:WorkflowViewState.IdRef="WriteTextFile_1">
-      <ui:WriteTextFile.FileName>
-        <InArgument x:TypeArguments="x:String">
-          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">"performer/du/data/digitized/" + in_docPath.Name+".txt"</CSharpValue>
-        </InArgument>
-      </ui:WriteTextFile.FileName>
-      <ui:WriteTextFile.Text>
-        <InArgument x:TypeArguments="x:String">
-          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">docText</CSharpValue>
-        </InArgument>
-      </ui:WriteTextFile.Text>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-    </ui:WriteTextFile>
     <p4:ClassifyDocumentScope DisplayName="Classify Document Scope" sap:VirtualizedContainerService.HintSize="477.6,571.2" sap2010:WorkflowViewState.IdRef="ClassifyDocumentScope_1" TaxonomyConfiguration="{}{&quot;TaxonomyMappings&quot;:{&quot;UId82313a700c34794bd21f897a7804484&quot;:{&quot;DocumentTypeMappings&quot;:{&quot;amet.invoices.ametInvoice&quot;:{&quot;OriginalDocumentTypeId&quot;:&quot;amet.invoices.ametInvoice&quot;,&quot;ClassifierDocumentTypeId&quot;:null,&quot;IsDocumentTypeIdMapped&quot;:true},&quot;aenean.invoices.aeneanInvoice&quot;:{&quot;OriginalDocumentTypeId&quot;:&quot;aenean.invoices.aeneanInvoice&quot;,&quot;ClassifierDocumentTypeId&quot;:null,&quot;IsDocumentTypeIdMapped&quot;:true}}}},&quot;ClassifierMinimumConfidence&quot;:{&quot;UId82313a700c34794bd21f897a7804484&quot;:&quot;0&quot;},&quot;DocumentTypesByPersistenceId&quot;:{&quot;UId82313a700c34794bd21f897a7804484&quot;:[]}}">
       <p4:ClassifyDocumentScope.ClassificationResults>
         <OutArgument x:TypeArguments="p5:ClassificationResult[]">
