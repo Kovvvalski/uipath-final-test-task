@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-N_-AnbU6U2uLBLD-xl6UA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://rpachallengeocr.azurewebsites.net/" DesignTimeRectangle="524, 457, 1300, 188" DesignTimeScaleFactor="1.25" FullSelectorArgument="&lt;webctrl id='tableSandbox' tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="c3c28a46-d35b-457a-a8e3-34f7bb76336e" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Automation Challenge - OCR' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c0c4dbd85466dfb56b92acf508259b19.png" xmlns="">0CtdkxDs-50OYXDFneNvTuw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ExtractData</x:String>
+    <p:InArgument x:TypeArguments="x:String" x:Key="ExtractDataSettings" xml:space="preserve">&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='id'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='dueDate'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='url'&gt;
+		&lt;IsValidName&gt;true&lt;/IsValidName&gt;
+		&lt;ValidationErrorMessage /&gt;
+		&lt;IsExtra&gt;false&lt;/IsExtra&gt;
+		&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;
+		&lt;Format xsi:type='TextColumnFormat' /&gt;
+	&lt;/Column&gt;
+	&lt;Column xsi:type='DataNextLink' /&gt;
+&lt;/Table&gt;</p:InArgument>
+    <TargetAnchorable x:Key="NextLinkTarget" BrowserURL="https://rpachallengeocr.azurewebsites.net/" CVScreenId="4c685810-c9b4-4cf0-b32e-04f50b6c6a94" CvElementArea="1748, 693, 77, 49" CvTextArea="1766, 707, 40, 17" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="1750, 696, 73, 44" DesignTimeScaleFactor="1.25" ElementType="Text" FullSelectorArgument="&lt;webctrl id='tableSandbox_next' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='tableSandbox_next' tag='A' type='' class='paginate_button next' aaname='Next' check:innerText='Next' /&gt;" Guid="886b9688-59ad-4464-bbc3-0363457e1c38" ImageBase64="" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Automation Challenge - OCR' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
