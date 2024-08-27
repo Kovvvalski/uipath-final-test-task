@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ProcessInvoice" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="868.8,1269.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:p1="http://schemas.uipath.com/workflow/activities/document-processing-contracts/taxonomy" xmlns:p2="http://schemas.uipath.com/workflow/activities/document-processing-contracts/dom" xmlns:p3="http://schemas.uipath.com/workflow/activities/document-processing-contracts/results" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=System.Private.CoreLib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ProcessInvoice" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="807.2,1043.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:p1="http://schemas.uipath.com/workflow/activities/document-processing-contracts/taxonomy" xmlns:p2="http://schemas.uipath.com/workflow/activities/document-processing-contracts/dom" xmlns:p3="http://schemas.uipath.com/workflow/activities/document-processing-contracts/results" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -131,7 +131,7 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="!!!This workflow was created for testing purposes only!!!" DisplayName="ProcessInvoices" sap:VirtualizedContainerService.HintSize="608,1204.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="!!!This workflow was created for testing purposes only!!!" DisplayName="ProcessInvoices" sap:VirtualizedContainerService.HintSize="512,978.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="IDkBzUJo5JckZCPYtbBzR9Wfyd9Uf9Mz/iwIb2HrII9OQG1NVJdo+azYbKlbv1Q1KqlxfkgbbUSEpOCj/i0TDA==" Name="DU_API_KEY" />
       <Variable x:TypeArguments="p1:DocumentTaxonomy" Name="taxonomy" />
@@ -147,14 +147,14 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <p:LoadTaxonomy DisplayName="Load Taxonomy" sap:VirtualizedContainerService.HintSize="545.6,137.6" sap2010:WorkflowViewState.IdRef="LoadTaxonomy_1">
+    <p:LoadTaxonomy DisplayName="Load Taxonomy" sap:VirtualizedContainerService.HintSize="449.6,137.6" sap2010:WorkflowViewState.IdRef="LoadTaxonomy_1">
       <p:LoadTaxonomy.Taxonomy>
         <OutArgument x:TypeArguments="p1:DocumentTaxonomy">
           <CSharpReference x:TypeArguments="p1:DocumentTaxonomy" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">taxonomy</CSharpReference>
         </OutArgument>
       </p:LoadTaxonomy.Taxonomy>
     </p:LoadTaxonomy>
-    <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="C:\\Users\\Acer\\Documents\\UiPath\\uipath-final-test-task\\invoices-processor\\performer\\du\\data\\invoices" sap:VirtualizedContainerService.HintSize="545.6,947.2" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+    <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="C:\\Users\\Acer\\Documents\\UiPath\\uipath-final-test-task\\invoices-processor\\performer\\du\\data\\invoices" sap:VirtualizedContainerService.HintSize="449.6,720.8" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
       <ui:ForEachFileX.Body>
         <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
           <ActivityAction.Argument1>
@@ -163,7 +163,7 @@
           <ActivityAction.Argument2>
             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
           </ActivityAction.Argument2>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="512,660.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,434.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="docText" />
               <Variable x:TypeArguments="p2:Document" Name="dom" />
@@ -177,7 +177,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ProcessInvoice - Invoke Workflow File (performer\du\ProcessInvoice.xaml)" sap:VirtualizedContainerService.HintSize="449.6,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="performer\du\ProcessInvoice.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ProcessInvoice - Invoke Workflow File (performer\du\ProcessInvoice.xaml)" sap:VirtualizedContainerService.HintSize="353.6,206.4" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="performer\du\ProcessInvoice.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <OutArgument x:TypeArguments="sd:DataSet" x:Key="out_extractedData">
                   <CSharpReference x:TypeArguments="sd:DataSet" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">extractedData</CSharpReference>
@@ -196,44 +196,23 @@
                 </InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <ui:ForEach x:TypeArguments="sd:DataTable" CurrentIndex="{x:Null}" DisplayName="For Each currentDataTable" sap:VirtualizedContainerService.HintSize="449.6,365.6" sap2010:WorkflowViewState.IdRef="ForEach`1_2">
-              <ui:ForEach.Body>
-                <ActivityAction x:TypeArguments="sd:DataTable">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="sd:DataTable" Name="currentDataTable" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="416,228" sap2010:WorkflowViewState.IdRef="Sequence_4">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="353.6,139.2" sap2010:WorkflowViewState.IdRef="WriteRange_2">
-                      <ui:WriteRange.DataTable>
-                        <InArgument x:TypeArguments="sd:DataTable">
-                          <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">currentDataTable</CSharpValue>
-                        </InArgument>
-                      </ui:WriteRange.DataTable>
-                      <ui:WriteRange.SheetName>
-                        <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">currentDataTable.TableName</CSharpValue>
-                        </InArgument>
-                      </ui:WriteRange.SheetName>
-                      <ui:WriteRange.WorkbookPath>
-                        <InArgument x:TypeArguments="x:String">
-                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">"performer/du/data/processed/" + currentFile.Name + ".xlsx"</CSharpValue>
-                        </InArgument>
-                      </ui:WriteRange.WorkbookPath>
-                    </ui:WriteRange>
-                  </Sequence>
-                </ActivityAction>
-              </ui:ForEach.Body>
-              <ui:ForEach.Values>
-                <InArgument x:TypeArguments="sc:IEnumerable">
-                  <CSharpValue x:TypeArguments="sc:IEnumerable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">extractedData.Tables</CSharpValue>
+            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="353.6,139.2" sap2010:WorkflowViewState.IdRef="WriteRange_3">
+              <ui:WriteRange.DataTable>
+                <InArgument x:TypeArguments="sd:DataTable">
+                  <CSharpValue x:TypeArguments="sd:DataTable" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">extractedData.Tables[0]</CSharpValue>
                 </InArgument>
-              </ui:ForEach.Values>
-            </ui:ForEach>
+              </ui:WriteRange.DataTable>
+              <ui:WriteRange.SheetName>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">extractedData.Tables[0].TableName</CSharpValue>
+                </InArgument>
+              </ui:WriteRange.SheetName>
+              <ui:WriteRange.WorkbookPath>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_57">"performer/du/data/processed/" + currentFile.Name + ".xlsx"</CSharpValue>
+                </InArgument>
+              </ui:WriteRange.WorkbookPath>
+            </ui:WriteRange>
           </Sequence>
         </ActivityAction>
       </ui:ForEachFileX.Body>

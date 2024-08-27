@@ -5,7 +5,9 @@
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [
+        "DU_API_KEY&"
+      ],
       "AddedNamespaces": null
     },
     {
@@ -13,7 +15,9 @@
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [
+        "DU_API_KEY&6c3eda0a-5775-4c3a-8137-5cf81557c358"
+      ],
       "AddedNamespaces": null
     },
     {
@@ -24,11 +28,13 @@
         "invoicesDatesUrls&Sequence_2"
       ],
       "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [
+        "DU_API_KEY&732d6837-8e77-413f-8e88-153b46135ff7"
+      ],
       "AddedNamespaces": null
     },
     {
-      "Path": "dispatcher/GetDate.xaml",
+      "Path": "performer/GetDate.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "dateStr&Sequence_1",
@@ -38,7 +44,9 @@
       "ArgumentsSectionElementsOrder": [
         "out_date"
       ],
-      "ConstantsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [
+        "DU_API_KEY&732d6837-8e77-413f-8e88-153b46135ff7"
+      ],
       "AddedNamespaces": null
     },
     {
@@ -49,13 +57,19 @@
         "out_invoicesDatesUrls",
         "in_pagesNumber"
       ],
-      "ConstantsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [
+        "DU_API_KEY&732d6837-8e77-413f-8e88-153b46135ff7"
+      ],
       "AddedNamespaces": null
     },
     {
       "Path": "performer/du/ProcessInvoices.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "data&Sequence_1",
+        "extractionResults&Sequence_2",
+        "invoiceData&Sequence_2",
+        "extractedData&Sequence_2",
         "taxonomy&Sequence_1",
         "dom&Sequence_2",
         "classificationResults&Sequence_2",
@@ -64,7 +78,29 @@
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [
-        "DU_API_KEY&f6373634-856d-405b-b0eb-61f863c1089b"
+        "DU_API_KEY&6c3eda0a-5775-4c3a-8137-5cf81557c358"
+      ],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "performer/du/ProcessInvoice.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "ocrEndPoint&Sequence_1",
+        "docText&Sequence_1",
+        "dom&Sequence_1",
+        "classificationResults&Sequence_1",
+        "extractionResults&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_taxonomy",
+        "in_docPath",
+        "in_duApiKey",
+        "in_documentId",
+        "out_extractedData"
+      ],
+      "ConstantsSectionElementsOrder": [
+        "DU_API_KEY&6c3eda0a-5775-4c3a-8137-5cf81557c358"
       ],
       "AddedNamespaces": null
     }
