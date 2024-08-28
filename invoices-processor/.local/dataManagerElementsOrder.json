@@ -4,10 +4,8 @@
       "Path": null,
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": [
-        "DU_API_KEY&"
-      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
@@ -15,22 +13,19 @@
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [
-        "DU_API_KEY&6c3eda0a-5775-4c3a-8137-5cf81557c358"
-      ],
+      "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
       "Path": "dispatcher/CreateInvoicesQueue.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "isSuccess&Sequence_1",
-        "invoicesDatesUrls&Sequence_2"
+        "pagesNumber&Sequence_1",
+        "invoices&Sequence_2",
+        "isSuccess&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [
-        "DU_API_KEY&732d6837-8e77-413f-8e88-153b46135ff7"
-      ],
+      "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
@@ -78,7 +73,7 @@
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [
-        "DU_API_KEY&6c3eda0a-5775-4c3a-8137-5cf81557c358"
+        "DU_API_KEY&df95b5e1-9aaf-4d45-8b80-9ed53dd8c42b"
       ],
       "AddedNamespaces": null
     },
@@ -93,15 +88,106 @@
         "extractionResults&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
+        "in_docInfo",
         "in_taxonomy",
-        "in_docPath",
         "in_duApiKey",
         "in_documentId",
         "out_extractedData"
       ],
       "ConstantsSectionElementsOrder": [
-        "DU_API_KEY&6c3eda0a-5775-4c3a-8137-5cf81557c358"
+        "DU_API_KEY&51c0c8b7-b87f-4ce6-bb5d-7205b46e9d54"
       ],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "performer/GeneralProcess.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DATE_FORMAT&Flowchart_1",
+        "userDate&Flowchart_1",
+        "downloadedFileResource&Sequence_3",
+        "invoiceNo&Sequence_10",
+        "invoiceDate&Sequence_10",
+        "invoiceCompanyName&Sequence_10",
+        "invoiceTotalDue&Sequence_10",
+        "outputDataTable&Flowchart_1",
+        "taxonomy&Flowchart_1",
+        "INVOICES_FOLDER&Sequence_10",
+        "extractedData&Sequence_10",
+        "currentTransaction&Flowchart_1",
+        "isFileDownloaded&Sequence_3",
+        "OUTPUT_FILE_FOLDER&Flowchart_1",
+        "isTransactionDataGot&Flowchart_1",
+        "currentItemIndex&Flowchart_1",
+        "listItems&Flowchart_1",
+        "queueItems&Flowchart_1",
+        "haveAnprocessedTransactions&Flowchart_1",
+        "documentUrl&Flowchart_1",
+        "documentDueDate&Flowchart_1",
+        "documentId&Flowchart_1",
+        "outputDocName&Flowchart_1",
+        "password&Flowchart_1",
+        "email&Flowchart_1",
+        "duApiKey&Flowchart_1",
+        "clientEmail&Flowchart_1",
+        "isInitSuccessfull&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "performer/InitDataFromAssets.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "out_outputDocumentName",
+        "out_password",
+        "out_email",
+        "out_duApiKey",
+        "out_clientEmail"
+      ],
+      "ConstantsSectionElementsOrder": [
+        "DU_API_KEY&df95b5e1-9aaf-4d45-8b80-9ed53dd8c42b"
+      ],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "performer/GetTransactionData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DATE_FORMAT&Sequence_1",
+        "URL&Sequence_1",
+        "DATE&Sequence_1",
+        "ID&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_docUrl",
+        "out_docDueDate",
+        "out_docId",
+        "in_queueItem"
+      ],
+      "ConstantsSectionElementsOrder": [
+        "DU_API_KEY&df95b5e1-9aaf-4d45-8b80-9ed53dd8c42b"
+      ],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "performer/ReformatInvoiceData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DATE_FORMAT&Sequence_1",
+        "EURO_SYMB&Sequence_1",
+        "AMET_COMPANY_STR&Sequence_1",
+        "AENEAN_COMPANY_STR&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "io_invoiceNo",
+        "io_invoiceDate",
+        "io_invoiceCompanyName",
+        "io_invoiceTotalDue"
+      ],
+      "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
   ]

@@ -1,10 +1,1 @@
-[
-  {
-    "Constant": true,
-    "Name": "DU_API_KEY",
-    "TypeFullyQualifiedName": "System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
-    "UnresolvedTypeFullyQualifiedName": null,
-    "Expression": "\"IDkBzUJo5JckZCPYtbBzR9Wfyd9Uf9Mz/iwIb2HrII9OQG1NVJdo+azYbKlbv1Q1KqlxfkgbbUSEpOCj/i0TDA==\"",
-    "IsLiteral": false
-  }
-]
+[]

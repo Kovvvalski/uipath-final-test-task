@@ -5,9 +5,11 @@
     <x:Property Name="out_email" Type="OutArgument(x:String)" />
     <x:Property Name="out_password" Type="OutArgument(ss:SecureString)" />
     <x:Property Name="out_outputDocumentName" Type="OutArgument(x:String)" />
+    <x:Property Name="out_deleteOutputFile" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="out_deleteDownloadedInvoices" Type="OutArgument(x:Boolean)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>807.2,1194.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>807.2,1544.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -86,7 +88,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="InitDataFromAssets" sap:VirtualizedContainerService.HintSize="416,1129.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="InitDataFromAssets" sap:VirtualizedContainerService.HintSize="416,1480" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -129,6 +131,20 @@
       <ui:GetRobotAsset.Value>
         <OutArgument x:TypeArguments="x:String">
           <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">out_outputDocumentName</CSharpReference>
+        </OutArgument>
+      </ui:GetRobotAsset.Value>
+    </ui:GetRobotAsset>
+    <ui:GetRobotAsset AssetName="deleteDownloadedInvoices" CacheStrategy="None" DisplayName="Get Asset" FolderPath="Invoices" sap:VirtualizedContainerService.HintSize="353.6,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_4" TimeoutMS="{x:Null}">
+      <ui:GetRobotAsset.Value>
+        <OutArgument x:TypeArguments="x:Boolean">
+          <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">out_deleteDownloadedInvoices</CSharpReference>
+        </OutArgument>
+      </ui:GetRobotAsset.Value>
+    </ui:GetRobotAsset>
+    <ui:GetRobotAsset AssetName="deleteOutputFile" CacheStrategy="None" DisplayName="Get Asset" FolderPath="Invoices" sap:VirtualizedContainerService.HintSize="353.6,175.2" sap2010:WorkflowViewState.IdRef="GetRobotAsset_5" TimeoutMS="{x:Null}">
+      <ui:GetRobotAsset.Value>
+        <OutArgument x:TypeArguments="x:Boolean">
+          <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">out_deleteOutputFile</CSharpReference>
         </OutArgument>
       </ui:GetRobotAsset.Value>
     </ui:GetRobotAsset>
