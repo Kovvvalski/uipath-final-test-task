@@ -6,7 +6,7 @@
     <x:Property Name="io_invoiceTotalDue" Type="InOutArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>807.2,1024</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>735.2,1068</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -88,18 +88,10 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ReformatInvoiceData" sap:VirtualizedContainerService.HintSize="592,959.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ReformatInvoiceData" sap:VirtualizedContainerService.HintSize="592,1003.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="AENEAN_COMPANY_STR">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Aenean LLC</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="AMET_COMPANY_STR">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Sit Amet Corp.</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="Aenean LLC" Name="AENEAN_COMPANY_STR" />
+      <Variable x:TypeArguments="x:String" Default="Sit Amet Corp." Name="AMET_COMPANY_STR" />
       <Variable x:TypeArguments="x:String" Default="€" Name="EURO_SYMB" />
       <Variable x:TypeArguments="x:String" Default="dd-MM-yyyy" Name="DATE_FORMAT" />
     </Sequence.Variables>
@@ -108,7 +100,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:IfElseIfV2 DisplayName="Else If" sap:VirtualizedContainerService.HintSize="529.6,870.4" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
+    <ui:IfElseIfV2 sap2010:Annotation.AnnotationText="В зависимости от фирмы, приводим дату к единому формату, также добавляем знак валюты" DisplayName="Else If" sap:VirtualizedContainerService.HintSize="529.6,914.4" sap2010:WorkflowViewState.IdRef="IfElseIfV2_1">
       <ui:IfElseIfV2.Condition>
         <InArgument x:TypeArguments="x:Boolean">
           <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">io_invoiceCompanyName.Equals(AENEAN_COMPANY_STR)</CSharpValue>
@@ -155,6 +147,11 @@
           </ui:IfElseIfBlock>
         </sc:BindingList>
       </ui:IfElseIfV2.ElseIfs>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
       <ui:IfElseIfV2.Then>
         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="496,307.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>

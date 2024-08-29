@@ -7,7 +7,7 @@
     <x:Property Name="out_totalDue" Type="OutArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>807.2,712.8</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>735.2,744</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -92,24 +92,20 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetInvoiceData" sap:VirtualizedContainerService.HintSize="496,648" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetInvoiceData" sap:VirtualizedContainerService.HintSize="496,679.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataRow" Name="invoiceDataRow" />
       <Variable x:TypeArguments="x:String" Default="Invoice Number" Name="INVOICE_NO" />
       <Variable x:TypeArguments="x:String" Default="Invoice Date" Name="INVOICE_DATE" />
       <Variable x:TypeArguments="x:String" Default="Company Name" Name="COMPANY_NAME" />
-      <Variable x:TypeArguments="x:String" Name="TOTAL_DUE">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">Total Due</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="Total Due" Name="TOTAL_DUE" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap2010:Annotation.AnnotationText="Берем 1-ю строку из 1-ой таблицы в  DataSet" sap:VirtualizedContainerService.HintSize="433.6,144.8" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="sd:DataRow">
           <CSharpReference x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">invoiceDataRow</CSharpReference>
@@ -120,6 +116,11 @@
           <CSharpValue x:TypeArguments="sd:DataRow" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">in_dataSet.Tables[0].Rows[0]</CSharpValue>
         </InArgument>
       </Assign.Value>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </Assign>
     <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
